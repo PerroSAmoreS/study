@@ -1,0 +1,215 @@
+@font-face { 
+	font-family: GilroyBold; /* Имя шрифта */ 
+	src: url(Fonts/Gilroy-Bold.ttf); /* Путь к файлу со шрифтом */ }
+@font-face { 
+	font-family: Gilroy; /* Имя шрифта */ 
+	src: url(Fonts/Gilroy-Medium.ttf); /* Путь к файлу со шрифтом */ }
+.wrapper {
+	width: 960px;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.header nav ul {
+	display: flex;
+	justify-content: space-between;
+	padding: 32px 0;
+	list-style: none;
+	margin: 0;
+}
+.header .wrapper {
+	border-bottom: 1px solid #828282;
+}
+.header nav a {
+	text-decoration: none;
+	color: #828282;
+	font-size: 18px;
+	font-family: GilroyBold;
+
+}
+.header nav a:hover, .header nav a:focus, .header nav a.active {
+	color: black;
+}
+.preview .wrapper .preview-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	position: relative;
+}
+.preview-name {
+	margin: 0;
+	font-family: GilroyBold;
+	font-size: 48px;
+	line-height: 1.2;
+	position: relative;
+	top: 10px;
+}
+html {
+	font-family: Gilroy;
+	font-size: 18px;
+}
+.preview-lang {
+	transform: rotate(180deg);
+	transform-origin: 50% 50%;
+	writing-mode: vertical-rl;
+	height: 90px;
+	font-family: GilroyBold;
+	font-size: 16px;
+
+}
+.preview-prof {
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+
+}
+.preview-lang a {
+	text-decoration: none;
+	color: #828282;
+}
+.preview-lang a:hover, .preview-lang a:focus, .preview-lang a.active {
+	color: black;
+}
+.preview-image {
+	width: 100%;
+
+}
+.preview-image img {
+	width: 100%;
+}
+.about, .portfolio {
+	background: #F6F6F6;
+	text-align: center;
+}
+.preview {
+	padding-bottom: 100px;
+}
+.about, .skills, .contacts, .portfolio {
+	padding: 100px 0;
+}
+.about p:not(:last-child) {
+	margin-bottom: 50px;
+	margin-top: 0;
+}
+.about p:last-child {
+	margin: 0;
+}
+.about h2 {
+	margin-bottom: 40px;
+	margin-top: 0;
+}
+.skills {
+	text-align: center;
+}
+.skillslist {
+	list-style: none;
+	padding: 0;
+}
+.skills h2, .skills p {
+	margin-top: 0;
+	margin-bottom: 80px;
+}
+.skillslist {
+	justify-content: space-between;
+	display: flex;
+}
+.skillname {
+	font-family: Gilroy-Bold.ttf;
+	font-size: 14px;
+	margin-bottom: 40px;
+	margin-top: 25px;
+	min-height: 2.4em;
+}
+.skillrate {
+	display: flex;
+	justify-content: center;
+}
+.star {
+	font-size: 25px;
+	margin: 0 3px;
+	color: #E5E5E5;
+}
+.star.active {
+	color: black;
+	
+}
+.portfolio ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.portfolio h2 {
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+.portfolio li {
+	margin-bottom: 100px;
+}
+.portfolio img {
+	margin-bottom: 50px;
+}
+.portfolio a {
+	color: black;
+}
+.portfolio a:hover, .portfolio a:focus {
+	opacity: 0.7;
+}
+.portfolio li:last-child {
+	margin-bottom: 0;
+}
+.contacts {
+	padding: 120px 0;
+
+}
+.contacts .wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contacts h2 {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.contacts p {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.contacts button {
+	background: black;
+	color: white;
+	font-family: GilroyBold;
+	border: none;
+	border-radius: 25px;
+	padding: 10px 30px;
+}
+.contacts button:hover {
+	background: red;
+	color: blue;
+	opacity: 0.7;
+	cursor: pointer;
+}
+.social {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin: 30px;
+}
+.social li {
+	margin: 0 30px;
+	margin-top: 70px;
+}
+small {
+	font-size: 14px;
+	color: #828282;
+	text-align: center;
+}
+.social a:hover {
+	opacity: .7;
+	background: red;
+}
